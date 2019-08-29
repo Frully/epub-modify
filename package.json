@@ -1,0 +1,56 @@
+{
+  "name": "epub-modify",
+  "version": "0.0.1",
+  "description": "Easy to read and edit .epub files.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "test": "jest",
+    "test:debug": "node --inspect-brk -r ts-node/register node_modules/.bin/jest --runInBand",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frully/epub-modify.git"
+  },
+  "keywords": [
+    "epub",
+    "parse",
+    "modify",
+    "epub-parser",
+    "book",
+    "ebook"
+  ],
+  "author": "Frully <i@frully.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Frully/epub-modify/issues"
+  },
+  "homepage": "https://github.com/Frully/epub-modify#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fast-xml-parser": "^3.12.20",
+    "html-to-text": "^5.1.1",
+    "jszip": "^3.2.2",
+    "mz": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/jszip": "^3.1.6",
+    "@types/node": "^12.7.2",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.1.0",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "source-map-support": "^0.5.13",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2",
+    "vrsource-tslint-rules": "^6.0.0"
+  }
+}

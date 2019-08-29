@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="2.0" unique-identifier="uuid_id" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <meta name="cover" content="cover" />
+    <meta content="2019-05-13T03:29:39.626000+00:00" name="calibre:timestamp" />
+    <dc:date>2019-05-13T03:00:00+00:00</dc:date>
+    <dc:identifier opf:scheme="MOBI-ASIN">B07RLVVZS1</dc:identifier>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">37140366-753d-4649-beb2-a75233fb22b1</dc:identifier>
+    <dc:identifier opf:scheme="calibre">37140366-753d-4649-beb2-a75233fb22b1</dc:identifier>
+    <dc:creator opf:file-as="Gaiman, Neil" opf:role="aut">Neil Gaiman</dc:creator>
+    <dc:creator opf:file-as="Gaiman, Neil" opf:role="aut">Terry Pratchett</dc:creator>
+    <dc:publisher>Bertrand</dc:publisher>
+    <dc:title>Good Omens: Belas maldições</dc:title>
+    <dc:language>pt</dc:language>
+    <dc:contributor opf:role="bkp">calibre (3.41.3) [https://calibre-ebook.com]</dc:contributor>
+    <meta content="Good Omens: Belas maldições" name="calibre:title_sort" />
+    <meta content="horizontal-lr" name="primary-writing-mode" />
+    <meta name="Sigil version" content="0.9.9" />
+    <dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="modification">2019-08-22</dc:date>
+  </metadata>
+  <manifest>
+    <item id="cover" href="Images/00001.jpeg" media-type="image/jpeg"/>
+    <item id="titlepage" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id122" href="Text/part0000_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id121" href="Text/part0000_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id13" href="Text/part0001.html" media-type="application/xhtml+xml"/>
+    <item id="id14" href="Text/part0002.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="Text/part0003.html" media-type="application/xhtml+xml"/>
+    <item id="id16" href="Text/part0004.html" media-type="application/xhtml+xml"/>
+    <item id="id17" href="Text/part0005.html" media-type="application/xhtml+xml"/>
+    <item id="id18" href="Text/part0006.html" media-type="application/xhtml+xml"/>
+    <item id="id19" href="Text/part0007.html" media-type="application/xhtml+xml"/>
+    <item id="id20" href="Text/part0008.html" media-type="application/xhtml+xml"/>
+    <item id="id21" href="Text/part0009.html" media-type="application/xhtml+xml"/>
+    <item id="id22" href="Text/part0010.html" media-type="application/xhtml+xml"/>
+    <item id="id23" href="Text/part0011.html" media-type="application/xhtml+xml"/>
+    <item id="id24" href="Text/part0012.html" media-type="application/xhtml+xml"/>
+    <item id="id25" href="Text/part0013.html" media-type="application/xhtml+xml"/>
+    <item id="id26" href="Text/part0014.html" media-type="application/xhtml+xml"/>
+    <item id="id27" href="Text/part0015.html" media-type="application/xhtml+xml"/>
+    <item id="id28" href="Text/part0016.html" media-type="application/xhtml+xml"/>
+    <item id="id29" href="Text/part0017.html" media-type="application/xhtml+xml"/>
+    <item id="id30" href="Text/part0018.html" media-type="application/xhtml+xml"/>
+    <item id="id31" href="Text/part0019.html" media-type="application/xhtml+xml"/>
+    <item id="id32" href="Text/part0020.html" media-type="application/xhtml+xml"/>
+    <item id="id33" href="Text/part0021.html" media-type="application/xhtml+xml"/>
+    <item id="id34" href="Text/part0022.html" media-type="application/xhtml+xml"/>
+    <item id="id35" href="Text/part0023.html" media-type="application/xhtml+xml"/>
+    <item id="id36" href="Text/part0024.html" media-type="application/xhtml+xml"/>
+    <item id="id372" href="Text/part0025_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id371" href="Text/part0025_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id382" href="Text/part0026_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id381" href="Text/part0026_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id392" href="Text/part0027_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id391" href="Text/part0027_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id402" href="Text/part0028_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id401" href="Text/part0028_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id412" href="Text/part0029_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id411" href="Text/part0029_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="Images/00002.jpeg" media-type="image/jpeg"/>
+    <item id="id3" href="Images/00003.jpeg" media-type="image/jpeg"/>
+    <item id="id4" href="Images/00004.jpeg" media-type="image/jpeg"/>
+    <item id="id5" href="Images/00005.jpeg" media-type="image/jpeg"/>
+    <item id="id6" href="Images/00006.jpeg" media-type="image/jpeg"/>
+    <item id="id7" href="Images/00007.jpeg" media-type="image/jpeg"/>
+    <item id="id8" href="Images/00008.jpeg" media-type="image/jpeg"/>
+    <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
+    <item id="page_css1" href="Styles/page_styles1.css" media-type="text/css"/>
+    <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="copyright_le.xhtml" href="Text/copyright_le.xhtml" media-type="application/xhtml+xml"/>
+    <item id="le-logo.png" href="Images/le-logo.png" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="copyright_le.xhtml"/>
+    <itemref idref="id122"/>
+    <itemref idref="id121"/>
+    <itemref idref="id13"/>
+    <itemref idref="id14"/>
+    <itemref idref="id15"/>
+    <itemref idref="id16"/>
+    <itemref idref="id17"/>
+    <itemref idref="id18"/>
+    <itemref idref="id19"/>
+    <itemref idref="id20"/>
+    <itemref idref="id21"/>
+    <itemref idref="id22"/>
+    <itemref idref="id23"/>
+    <itemref idref="id24"/>
+    <itemref idref="id25"/>
+    <itemref idref="id26"/>
+    <itemref idref="id27"/>
+    <itemref idref="id28"/>
+    <itemref idref="id29"/>
+    <itemref idref="id30"/>
+    <itemref idref="id31"/>
+    <itemref idref="id32"/>
+    <itemref idref="id33"/>
+    <itemref idref="id34"/>
+    <itemref idref="id35"/>
+    <itemref idref="id36"/>
+    <itemref idref="id372"/>
+    <itemref idref="id371"/>
+    <itemref idref="id382"/>
+    <itemref idref="id381"/>
+    <itemref idref="id392"/>
+    <itemref idref="id391"/>
+    <itemref idref="id402"/>
+    <itemref idref="id401"/>
+    <itemref idref="id412"/>
+    <itemref idref="id411"/>
+  </spine>
+  <guide>
+    <reference type="toc" title="SUMÁRIO" href="Text/part0005.html#4OIQ0-519d8177d0164a258b5cce690d4ab9ae"/>
+    <reference type="cover" title="Cover" href="Text/titlepage.xhtml"/>
+    <reference type="text" title="start" href="Text/part0006.html#5N3C2-519d8177d0164a258b5cce690d4ab9ae"/>
+  </guide>
+</package>
