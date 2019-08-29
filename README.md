@@ -13,5 +13,5 @@ npm install epub-modify
 ```js
 import { parseEpub } from 'epub-modify'
 
-console.log(parser(binaryData))
+console.log(await parseEpub(epubBinary))
 ```
