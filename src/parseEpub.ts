@@ -123,7 +123,8 @@ export class Epub {
   }
 
   async toBuffer(): Promise<Buffer> {
-    return this.zip.generateAsync({type: 'nodebuffer'}, {
+    return this.zip.generateAsync({
+      type: 'nodebuffer',
       compression: 'DEFLATE',
       compressionOptions: { level: 9 }
     })

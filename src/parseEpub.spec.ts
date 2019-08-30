@@ -26,4 +26,20 @@ describe(`parser`, () => {
     })
     expect(typeof await epub.manifest[0].getText()).toBe('string')
   })
+
+  test('Should set file', async() => {
+    const epub = await parseEpub(path.join(baseDir, 'fixtures/basic-v3plus2.epub'))
+
+    epub.manifest[0].setText('123')
+    expect(await epub.manifest[0].getText()).toBe('123')
+  })
+
+  test('Should get buffer', async() => {
+    const epub = await parseEpub(path.join(baseDir, 'fixtures/basic-v3plus2.epub'))
+
+    epub.manifest[0].setText('123')
+
+    const buffer = await epub.toBuffer()
+    expect(buffer instanceof Buffer).toBeTruthy()
+  })
 })
