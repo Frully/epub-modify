@@ -97,29 +97,16 @@ export function parseManifest(opfObj): Item[] {
 }
 
 export function parseSpine(opfObj): any {
-  const spine = opfObj.package.spine
-
-  const ret: any = {
-    spine: spine.itemref.map(itemref => itemref.attr.idref),
-  }
-
-  if (spine.attr && spine.attr.toc) {
-    ret.ncxId = spine.attr.toc
-  }
-
-  return ret
+  return getArray(opfObj.package.spine.itemref).map(itemref => itemref.attr.idref)
 }
 
 export function parseOpf(xml) {
   const opfObj: any = xml2obj(xml)
 
-  const { ncxId, spine } = parseSpine(opfObj)
-
   return {
     version: opfObj.package.attr.version,
     metadata: parseMetadata(opfObj),
     manifest: parseManifest(opfObj),
-    spine,
-    ncxId,
+    spine: parseSpine(opfObj),
   }
 }

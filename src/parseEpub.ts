@@ -126,14 +126,13 @@ export class Epub {
       return new File(item, this)
     })
 
-    const ncxId = opf.ncxId
     Object.assign(this, opf, { manifest })
 
     const versionNum = parseFloat(this.version)
     if (versionNum >= 3) {
       this.nav = parseNav(await this.findFile({ properties: 'nav'}).getText())
     } else {
-      const ncxXml = await this.findFile({ id: ncxId}).getText()
+      const ncxXml = await this.findFile({ 'media-type': 'application/x-dtbncx+xml' }).getText()
       this.nav = { toc: parseNcx(ncxXml) }
     }
   }

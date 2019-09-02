@@ -1,6 +1,6 @@
 {
   "name": "epub-modify",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Easy to read and edit .epub files.",
   "main": "lib/index.js",
   "scripts": {
