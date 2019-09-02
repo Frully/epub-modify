@@ -73,7 +73,23 @@ export class Epub {
 
   private async getOpfPath() {
     const containerObj = xml2obj(await this.getFileText('/META-INF/container.xml'))
-    return '/' + containerObj.container.rootfiles.rootfile.attr['full-path']
+    let opfPath = containerObj.container.rootfiles.rootfile.attr['full-path']
+    
+    const file = await this.zip.file(opfPath)
+    
+    if (!file) {
+      const opfFiles = this.zip.filter((_, opfFile) => {
+        return !opfFile.dir && opfFile.name.match(/content\.opf$/)
+      })
+
+      if (opfFiles.length === 0) {
+        throw new Error('Cannot find OPF file')
+      }
+
+      opfPath = opfFiles[0].name
+    }
+
+    return '/' + opfPath
   }
 
   async getOpf() {

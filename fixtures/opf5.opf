@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<opf:package xmlns:opf="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <opf:metadata>
+    <dc:identifier id="bookid">urn:uuid:c566888e-caaa-11e1-aa20-005056860020</dc:identifier>
+    <dc:language>pt</dc:language>
+    <dc:title>A Casa das Orquídeas</dc:title>
+    <dc:description>Quando criança, a pianista Júlia Forrester passava seu tempo na estufa da propriedade de Wharton Park, onde flores exóticas cultivadas pelo seu avô nasciam e morriam com as estações. Agora, recuperando-se de uma tragédia na família, ela busca mais uma vez o conforto de Wharton Park, recém-herdada por Kit Crawford, um homem carismático que também tem uma história triste. No entanto, quando um antigo diário é encontrado durante uma reforma, os dois procuram a avó de Júlia para descobrirem a verdade sobre o romance que destruiu o futuro de Wharton Park... E, assim, Júlia é levada de volta no tempo, para o mundo de Olívia e Harry Crawford, um jovem casal separado cruelmente pela Segunda Guerra Mundial, cujo frágil casamento estava destinado a afetar a felicidade de muitas gerações, inclusive da de Júlia.</dc:description>
+    <dc:creator opf:role="aut">Lucinda Riley</dc:creator>
+    <dc:publisher>Editora Novo Conceito</dc:publisher>
+    <dc:date opf:event="modification">2016-02-23</dc:date>
+    <opf:meta content="image_1" name="cover" />
+    <meta xmlns="http://www.idpf.org/2007/opf" content="0.8.4" name="Sigil version" />
+  </opf:metadata>
+  <opf:manifest>
+    <opf:item href="toc.ncx" id="ncxtoc" media-type="application/x-dtbncx+xml" />
+    <opf:item href="Styles/main.css" id="css_1" media-type="text/css" />
+    <opf:item href="Text/toc.html" id="html_1" media-type="application/xhtml+xml" />
+    <opf:item href="Text/7.html" id="html_10" media-type="application/xhtml+xml" />
+    <opf:item href="Text/8.html" id="html_11" media-type="application/xhtml+xml" />
+    <opf:item href="Text/9.html" id="html_12" media-type="application/xhtml+xml" />
+    <opf:item href="Text/10.html" id="html_13" media-type="application/xhtml+xml" />
+    <opf:item href="Text/11.html" id="html_14" media-type="application/xhtml+xml" />
+    <opf:item href="Text/12.html" id="html_15" media-type="application/xhtml+xml" />
+    <opf:item href="Text/13.html" id="html_16" media-type="application/xhtml+xml" />
+    <opf:item href="Text/14.html" id="html_17" media-type="application/xhtml+xml" />
+    <opf:item href="Text/15.html" id="html_18" media-type="application/xhtml+xml" />
+    <opf:item href="Text/16.html" id="html_19" media-type="application/xhtml+xml" />
+    <opf:item href="Text/title-page.html" id="html_2" media-type="application/xhtml+xml" />
+    <opf:item href="Text/17.html" id="html_20" media-type="application/xhtml+xml" />
+    <opf:item href="Text/18.html" id="html_21" media-type="application/xhtml+xml" />
+    <opf:item href="Text/19.html" id="html_22" media-type="application/xhtml+xml" />
+    <opf:item href="Text/20.html" id="html_23" media-type="application/xhtml+xml" />
+    <opf:item href="Text/21.html" id="html_24" media-type="application/xhtml+xml" />
+    <opf:item href="Text/22.html" id="html_25" media-type="application/xhtml+xml" />
+    <opf:item href="Text/23.html" id="html_26" media-type="application/xhtml+xml" />
+    <opf:item href="Text/24.html" id="html_27" media-type="application/xhtml+xml" />
+    <opf:item href="Text/25.html" id="html_28" media-type="application/xhtml+xml" />
+    <opf:item href="Text/26.html" id="html_29" media-type="application/xhtml+xml" />
+    <opf:item href="Text/cover.jpg.html" id="html_3" media-type="application/xhtml+xml" />
+    <opf:item href="Text/27.html" id="html_30" media-type="application/xhtml+xml" />
+    <opf:item href="Text/28.html" id="html_31" media-type="application/xhtml+xml" />
+    <opf:item href="Text/29.html" id="html_32" media-type="application/xhtml+xml" />
+    <opf:item href="Text/30.html" id="html_33" media-type="application/xhtml+xml" />
+    <opf:item href="Text/31.html" id="html_34" media-type="application/xhtml+xml" />
+    <opf:item href="Text/32.html" id="html_35" media-type="application/xhtml+xml" />
+    <opf:item href="Text/33.html" id="html_36" media-type="application/xhtml+xml" />
+    <opf:item href="Text/34.html" id="html_37" media-type="application/xhtml+xml" />
+    <opf:item href="Text/35.html" id="html_38" media-type="application/xhtml+xml" />
+    <opf:item href="Text/36.html" id="html_39" media-type="application/xhtml+xml" />
+    <opf:item href="Text/1.html" id="html_4" media-type="application/xhtml+xml" />
+    <opf:item href="Text/37.html" id="html_40" media-type="application/xhtml+xml" />
+    <opf:item href="Text/38.html" id="html_41" media-type="application/xhtml+xml" />
+    <opf:item href="Text/39.html" id="html_42" media-type="application/xhtml+xml" />
+    <opf:item href="Text/40.html" id="html_43" media-type="application/xhtml+xml" />
+    <opf:item href="Text/41.html" id="html_44" media-type="application/xhtml+xml" />
+    <opf:item href="Text/42.html" id="html_45" media-type="application/xhtml+xml" />
+    <opf:item href="Text/43.html" id="html_46" media-type="application/xhtml+xml" />
+    <opf:item href="Text/44.html" id="html_47" media-type="application/xhtml+xml" />
+    <opf:item href="Text/45.html" id="html_48" media-type="application/xhtml+xml" />
+    <opf:item href="Text/46.html" id="html_49" media-type="application/xhtml+xml" />
+    <opf:item href="Text/2.html" id="html_5" media-type="application/xhtml+xml" />
+    <opf:item href="Text/47.html" id="html_50" media-type="application/xhtml+xml" />
+    <opf:item href="Text/48.html" id="html_51" media-type="application/xhtml+xml" />
+    <opf:item href="Text/49.html" id="html_52" media-type="application/xhtml+xml" />
+    <opf:item href="Text/50.html" id="html_53" media-type="application/xhtml+xml" />
+    <opf:item href="Text/51.html" id="html_54" media-type="application/xhtml+xml" />
+    <opf:item href="Text/52.html" id="html_55" media-type="application/xhtml+xml" />
+    <opf:item href="Text/53.html" id="html_56" media-type="application/xhtml+xml" />
+    <opf:item href="Text/54.html" id="html_57" media-type="application/xhtml+xml" />
+    <opf:item href="Text/55.html" id="html_58" media-type="application/xhtml+xml" />
+    <opf:item href="Text/56.html" id="html_59" media-type="application/xhtml+xml" />
+    <opf:item href="Text/3.html" id="html_6" media-type="application/xhtml+xml" />
+    <opf:item href="Text/57.html" id="html_60" media-type="application/xhtml+xml" />
+    <opf:item href="Text/58.html" id="html_61" media-type="application/xhtml+xml" />
+    <opf:item href="Text/59.html" id="html_62" media-type="application/xhtml+xml" />
+    <opf:item href="Text/60.html" id="html_63" media-type="application/xhtml+xml" />
+    <opf:item href="Text/61.html" id="html_64" media-type="application/xhtml+xml" />
+    <opf:item href="Text/62.html" id="html_65" media-type="application/xhtml+xml" />
+    <opf:item href="Text/63.html" id="html_66" media-type="application/xhtml+xml" />
+    <opf:item href="Text/64.html" id="html_67" media-type="application/xhtml+xml" />
+    <opf:item href="Text/65.html" id="html_68" media-type="application/xhtml+xml" />
+    <opf:item href="Text/66.html" id="html_69" media-type="application/xhtml+xml" />
+    <opf:item href="Text/4.html" id="html_7" media-type="application/xhtml+xml" />
+    <opf:item href="Text/67.html" id="html_70" media-type="application/xhtml+xml" />
+    <opf:item href="Text/68.html" id="html_71" media-type="application/xhtml+xml" />
+    <opf:item href="Text/69.html" id="html_72" media-type="application/xhtml+xml" />
+    <opf:item href="Text/70.html" id="html_73" media-type="application/xhtml+xml" />
+    <opf:item href="Text/5.html" id="html_8" media-type="application/xhtml+xml" />
+    <opf:item href="Text/6.html" id="html_9" media-type="application/xhtml+xml" />
+    <opf:item href="Images/cover.jpg" id="image_1" media-type="image/jpeg" />
+    <opf:item href="Images/rId9.jpg" id="image_2" media-type="image/jpeg" />
+    <item xmlns="http://www.idpf.org/2007/opf" href="Text/copyright_le.xhtml" id="copyright_le.xhtml" media-type="application/xhtml+xml" />
+    <item xmlns="http://www.idpf.org/2007/opf" href="Images/le-logo.png" id="le-logo.png" media-type="image/png" />
+  </opf:manifest>
+  <opf:spine toc="ncxtoc">
+    <opf:itemref idref="html_3" linear="yes" />
+    <itemref xmlns="http://www.idpf.org/2007/opf" idref="copyright_le.xhtml" />
+    <opf:itemref idref="html_2" linear="yes" />
+    <opf:itemref idref="html_1" linear="no" />
+    <opf:itemref idref="html_4" linear="yes" />
+    <opf:itemref idref="html_5" linear="yes" />
+    <opf:itemref idref="html_6" linear="yes" />
+    <opf:itemref idref="html_7" linear="yes" />
+    <opf:itemref idref="html_8" linear="yes" />
+    <opf:itemref idref="html_9" linear="yes" />
+    <opf:itemref idref="html_10" linear="yes" />
+    <opf:itemref idref="html_11" linear="yes" />
+    <opf:itemref idref="html_12" linear="yes" />
+    <opf:itemref idref="html_13" linear="yes" />
+    <opf:itemref idref="html_14" linear="yes" />
+    <opf:itemref idref="html_15" linear="yes" />
+    <opf:itemref idref="html_16" linear="yes" />
+    <opf:itemref idref="html_17" linear="yes" />
+    <opf:itemref idref="html_18" linear="yes" />
+    <opf:itemref idref="html_19" linear="yes" />
+    <opf:itemref idref="html_20" linear="yes" />
+    <opf:itemref idref="html_21" linear="yes" />
+    <opf:itemref idref="html_22" linear="yes" />
+    <opf:itemref idref="html_23" linear="yes" />
+    <opf:itemref idref="html_24" linear="yes" />
+    <opf:itemref idref="html_25" linear="yes" />
+    <opf:itemref idref="html_26" linear="yes" />
+    <opf:itemref idref="html_27" linear="yes" />
+    <opf:itemref idref="html_28" linear="yes" />
+    <opf:itemref idref="html_29" linear="yes" />
+    <opf:itemref idref="html_30" linear="yes" />
+    <opf:itemref idref="html_31" linear="yes" />
+    <opf:itemref idref="html_32" linear="yes" />
+    <opf:itemref idref="html_33" linear="yes" />
+    <opf:itemref idref="html_34" linear="yes" />
+    <opf:itemref idref="html_35" linear="yes" />
+    <opf:itemref idref="html_36" linear="yes" />
+    <opf:itemref idref="html_37" linear="yes" />
+    <opf:itemref idref="html_38" linear="yes" />
+    <opf:itemref idref="html_39" linear="yes" />
+    <opf:itemref idref="html_40" linear="yes" />
+    <opf:itemref idref="html_41" linear="yes" />
+    <opf:itemref idref="html_42" linear="yes" />
+    <opf:itemref idref="html_43" linear="yes" />
+    <opf:itemref idref="html_44" linear="yes" />
+    <opf:itemref idref="html_45" linear="yes" />
+    <opf:itemref idref="html_46" linear="yes" />
+    <opf:itemref idref="html_47" linear="yes" />
+    <opf:itemref idref="html_48" linear="yes" />
+    <opf:itemref idref="html_49" linear="yes" />
+    <opf:itemref idref="html_50" linear="yes" />
+    <opf:itemref idref="html_51" linear="yes" />
+    <opf:itemref idref="html_52" linear="yes" />
+    <opf:itemref idref="html_53" linear="yes" />
+    <opf:itemref idref="html_54" linear="yes" />
+    <opf:itemref idref="html_55" linear="yes" />
+    <opf:itemref idref="html_56" linear="yes" />
+    <opf:itemref idref="html_57" linear="yes" />
+    <opf:itemref idref="html_58" linear="yes" />
+    <opf:itemref idref="html_59" linear="yes" />
+    <opf:itemref idref="html_60" linear="yes" />
+    <opf:itemref idref="html_61" linear="yes" />
+    <opf:itemref idref="html_62" linear="yes" />
+    <opf:itemref idref="html_63" linear="yes" />
+    <opf:itemref idref="html_64" linear="yes" />
+    <opf:itemref idref="html_65" linear="yes" />
+    <opf:itemref idref="html_66" linear="yes" />
+    <opf:itemref idref="html_67" linear="yes" />
+    <opf:itemref idref="html_68" linear="yes" />
+    <opf:itemref idref="html_69" linear="yes" />
+    <opf:itemref idref="html_70" linear="yes" />
+    <opf:itemref idref="html_71" linear="yes" />
+    <opf:itemref idref="html_72" linear="yes" />
+    <opf:itemref idref="html_73" linear="yes" />
+  </opf:spine>
+  <opf:guide>
+    <opf:reference href="Text/cover.jpg.html" title="Cover" type="cover" />
+    <opf:reference href="Text/title-page.html" title="Title Page" type="title-page" />
+    <opf:reference href="Text/toc.html" title="Table of Contents" type="toc" />
+  </opf:guide>
+</opf:package>

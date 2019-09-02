@@ -52,6 +52,15 @@ describe('parseOpf.ts', () => {
         isbn: '9780395404256',
       })
     })
+
+    test('Result should have data 2', async () => {
+      const opfObj = await readToXmlObj('opf4.opf')
+      const metadata = parseMetadata(opfObj)
+
+      expect(metadata).toMatchObject({
+        title: 'Entre rinhas de cachorros e porcos abatidos',
+      })
+    })
   })
 
   describe('parseManifest()', () => {
@@ -94,6 +103,16 @@ describe('parseOpf.ts', () => {
       const opf = await parseOpf(opfXml)
 
       expect(opf.version).toBe('3.0')
+      expect(opf).toHaveProperty('metadata')
+      expect(opf).toHaveProperty('manifest')
+      expect(opf).toHaveProperty('spine')
+    })
+
+    test('Result should have data 2', async () => {
+      const opfXml = await readToXml('opf5.opf')
+      const opf = await parseOpf(opfXml)
+
+      expect(opf.version).toBe('1.0')
       expect(opf).toHaveProperty('metadata')
       expect(opf).toHaveProperty('manifest')
       expect(opf).toHaveProperty('spine')

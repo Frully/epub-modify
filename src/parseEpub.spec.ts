@@ -16,6 +16,12 @@ describe(`parser`, () => {
     expect(epub.nav.toc).toHaveLength(2)
   })
 
+  test('Should parse the wrong opf path', async () => {
+    const epub = await parseEpub(path.join(baseDir, 'fixtures/epub2.epub'))
+
+    expect(epub.version).toBe('2.0')
+  })
+
   test('Should get file', async() => {
     const epub = await parseEpub(path.join(baseDir, 'fixtures/basic-v3plus2.epub'))
 

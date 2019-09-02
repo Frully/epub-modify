@@ -12,7 +12,7 @@ function getArray(val) {
 }
 
 function parseIdentifier(metadataObj) {
-  const identifiers = getArray(metadataObj['dc:identifier'])
+  const identifiers = getArray(metadataObj['identifier'])
 
   let isbn
   let asin
@@ -24,9 +24,7 @@ function parseIdentifier(metadataObj) {
       return
     }
 
-    const type = row.attr['opf:scheme'] || row.attr['scheme'] ||
-      row.attr['ns1:scheme'] || row.attr['ns2:scheme'] || row.attr['ns3:scheme'] || row.attr['p4:scheme'] ||
-      row.attr['d3p1:scheme']
+    const type = row.attr.scheme
 
     if (type && type.match(/^(e-?)?isbn/i)) {
       isbn = id
@@ -59,23 +57,23 @@ function parseIdentifier(metadataObj) {
 
 export function parseMetadata(opfObj) {
   const metadataObj = opfObj.package.metadata
-  let title = metadataObj['dc:title']
+  let title = metadataObj.title
 
-  let creators = getArray(metadataObj['dc:creator']).map(creator => {
+  let creators = getArray(metadataObj.creator).map(creator => {
     return {
       name: creator['#text'],
-      role: creator.attr['opf:role'],
+      role: creator.attr && creator.attr.role,
     }
   })
 
   let { isbn, asin } = parseIdentifier(metadataObj)
 
-  const description = metadataObj['dc:description'] && htmlToText.fromString(metadataObj['dc:description'], {
+  const description = metadataObj.description && htmlToText.fromString(metadataObj.description, {
     wordwrap: false,
     ignoreImage: true,
   }).trim()
 
-  const language = getArray(metadataObj['dc:language'])
+  const language = getArray(metadataObj.language)
 
   return {
     title,

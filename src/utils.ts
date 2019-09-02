@@ -7,5 +7,6 @@ export function xml2obj(xml) {
     ignoreAttributes: false,
     parseNodeValue: false,
     parseAttributeValue: false,
+    ignoreNameSpace: true,
   })
 }

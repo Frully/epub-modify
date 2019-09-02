@@ -52,5 +52,12 @@ describe('parseNav.ts', () => {
         title: 'Start'
       })
     })
+
+    test('Result should have data 3', async () => {
+      const xml = await readToText('ncx3.ncx')
+      const toc = parseNcx(xml)
+
+      expect(toc).toHaveLength(0)
+    })
   })
 })

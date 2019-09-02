@@ -25,10 +25,12 @@ export function parseNav(html): any {
 export function parseNcx(xml): any {
   const ncxObj = xml2obj(xml)
 
+  if (!ncxObj.ncx.navMap.navPoint) return []
+  
   const navPoints = Array.isArray(ncxObj.ncx.navMap.navPoint)
     ? ncxObj.ncx.navMap.navPoint
     : [ncxObj.ncx.navMap.navPoint]
-    
+
   return navPoints.map(navPoint => {
     return {
       title: navPoint.navLabel.text,
