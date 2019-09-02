@@ -1,0 +1,44 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="calibre-uuid">
+  <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:creator opf:role="aut" opf:file-as="Atwood, Margaret">Margaret Atwood</dc:creator>
+<meta name="calibre:series_index" content="1"/>
+    <dc:language>UND</dc:language>
+    <meta name="calibre:timestamp" content="2009-10-04T13:03:27"/>
+    <dc:title>The handmaid's tale</dc:title>
+    <meta name="cover" content="cover"/>
+    <dc:date>1986-10-14 23:00:00+01:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (0.6.16) [http://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="calibre-uuid">urn:uuid:23b994e5-31b7-4084-8cad-8cb0fa55476e</dc:identifier>
+  <dc:publisher>Houghton Mifflin Harcourt</dc:publisher>
+<opf:meta name="calibre:rating" content="0"/>
+<dc:identifier opf:scheme="ISBN">9780395404256</dc:identifier>
+<dc:subject>Unread</dc:subject>
+<dc:description>SUMMARY:
+First published in 1985, The Handmaid's Tale is a novel of such power that the reader is unable to forget its images and its forecast. With more than two million copies in print, it is Margaret Atwood's most popular and compelling novel.Set in the near future, it describes life in what once was the United States, now called the Republic of Gilead. Reacting to social unrest, and a sharply declining birthrate, the new regime has reverted to -- even gone beyond -- the repressive tolerance of the original Puritans. Offred is a Handmaid who may leave the home of the Commander and his wife once a day to walk to food markets whose signs are now pictures instead of words because women are no longer allowed to read. She must lie on her back once a month and pray that the Commander makes her pregnant because she is only valued as long as her ovaries are viable. Offred can remember the years before, when she lived and made love with her husband, Luke; when she played with and protected her daughter; when she had a job, money of her own, and access to knowledge. But all of that is gone now.Funny, unexpected, horrifying, and altogether convincing, The Handmaid's Tale is at once scathing satire, dire warning, and tour de force.</dc:description>
+</metadata>
+  <manifest>
+    <item href="The Handmaid_split_5.htm" id="The_Handmaid1" media-type="application/xhtml+xml"/>
+    <item href="The Handmaid_split_2.htm" id="The_Handmaid4" media-type="application/xhtml+xml"/>
+    <item href="The Handmaid_split_0.htm" id="The_Handmaid6" media-type="application/xhtml+xml"/>
+    <item href="The Handmaid_split_1.htm" id="The_Handmaid5" media-type="application/xhtml+xml"/>
+    <item href="The Handmaid_split_4.htm" id="The_Handmaid2" media-type="application/xhtml+xml"/>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="cover.jpg" id="cover" media-type="image/jpeg"/>
+    <item href="The Handmaid_split_3.htm" id="The_Handmaid3" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" media-type="application/x-dtbncx+xml" id="ncx"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="The_Handmaid6"/>
+    <itemref idref="The_Handmaid5"/>
+    <itemref idref="The_Handmaid4"/>
+    <itemref idref="The_Handmaid3"/>
+    <itemref idref="The_Handmaid2"/>
+    <itemref idref="The_Handmaid1"/>
+  </spine>
+  <guide>
+    <reference href="titlepage.xhtml" type="cover" title="Cover"/>
+  </guide>
+</package>

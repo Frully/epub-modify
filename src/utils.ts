@@ -5,5 +5,7 @@ export function xml2obj(xml) {
     attributeNamePrefix: '',
     attrNodeName: 'attr',
     ignoreAttributes: false,
+    parseNodeValue: false,
+    parseAttributeValue: false,
   })
 }

@@ -43,6 +43,15 @@ describe('parseOpf.ts', () => {
         asin: 'B07RLVVZS1',
       })
     })
+
+    test('Result should have isbn or asin 2', async () => {
+      const opfObj = await readToXmlObj('opf3.opf')
+      const metadata = parseMetadata(opfObj)
+
+      expect(metadata).toMatchObject({
+        isbn: '9780395404256',
+      })
+    })
   })
 
   describe('parseManifest()', () => {
@@ -64,7 +73,7 @@ describe('parseOpf.ts', () => {
     })
   })
 
-  describe.only('parseSpine()', () => {
+  describe('parseSpine()', () => {
     test('Result should have data', async () => {
       const opfObj = await readToXmlObj('opf1.opf')
       const { ncxId, spine } = parseSpine(opfObj)

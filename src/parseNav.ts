@@ -25,7 +25,11 @@ export function parseNav(html): any {
 export function parseNcx(xml): any {
   const ncxObj = xml2obj(xml)
 
-  return ncxObj.ncx.navMap.navPoint.map(navPoint => {
+  const navPoints = Array.isArray(ncxObj.ncx.navMap.navPoint)
+    ? ncxObj.ncx.navMap.navPoint
+    : [ncxObj.ncx.navMap.navPoint]
+    
+  return navPoints.map(navPoint => {
     return {
       title: navPoint.navLabel.text,
       href: navPoint.content.attr.src,

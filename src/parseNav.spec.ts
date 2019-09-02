@@ -41,5 +41,16 @@ describe('parseNav.ts', () => {
         title: 'Ladle Rat Rotten Hut'
       })
     })
+
+    test('Result should have data 2', async () => {
+      const xml = await readToText('ncx2.ncx')
+      const toc = parseNcx(xml)
+
+      expect(toc).toHaveLength(1)
+      expect(toc[0]).toMatchObject({
+        href: 'titlepage.xhtml',
+        title: 'Start'
+      })
+    })
   })
 })
