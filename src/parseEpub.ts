@@ -2,7 +2,7 @@ import fs from 'mz/fs'
 import Zip, { JSZipObject } from 'jszip'
 import { parseOpf } from './parseOpf'
 import { parseNav, parseNcx } from './parseNav'
-import { File } from './file'
+import { Item } from './item'
 import { xml2obj } from './utils'
 
 
@@ -16,12 +16,12 @@ export class Epub {
   private root: string
   private opfPath: string
   version: string
-  manifest: File[]
-  spine: any
+  manifest: Item[]
+  spine: any[]
   nav: any
   metadata: {
     title: string
-    creators: string[]
+    creators: any[]
     description: string
     language: string[]
     isbn: string
@@ -100,7 +100,7 @@ export class Epub {
     this.setZipFile(this.opfPath, xml)
   }
 
-  private findFile(query) {
+  private findItem(query) {
     const keys = Object.keys(query)
 
     const findFn = file => {
@@ -122,17 +122,32 @@ export class Epub {
     const opfXml = await this.getFileText(this.opfPath)
     const opf = parseOpf(opfXml)
 
-    const manifest = opf.manifest.map(item => {
-      return new File(item, this)
+    this.version = opf.version
+    this.metadata = opf.metadata
+
+    this.manifest = opf.manifest.map(item => {
+      return new Item(item, this)
     })
 
-    Object.assign(this, opf, { manifest })
+    this.spine = opf.spine.map(itemref => {
+      return {
+        ...itemref,
+        item: this.findItem({ id: itemref.idref }),
+      }
+    })
 
     const versionNum = parseFloat(this.version)
     if (versionNum >= 3) {
-      this.nav = parseNav(await this.findFile({ properties: 'nav'}).getText())
+      this.nav = parseNav(await this.findItem({ properties: 'nav'}).getText())
     } else {
-      const ncxXml = await this.findFile({ 'media-type': 'application/x-dtbncx+xml' }).getText()
+      let ncxFile
+      if (opf.ncxId) {
+        ncxFile = this.findItem({ id: opf.ncxId })
+      }
+      if (!ncxFile) {
+        ncxFile = this.findItem({ 'media-type': 'application/x-dtbncx+xml' })
+      }
+      const ncxXml = await ncxFile.getText()
       this.nav = { toc: parseNcx(ncxXml) }
     }
   }

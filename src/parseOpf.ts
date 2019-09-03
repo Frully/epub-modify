@@ -97,7 +97,7 @@ export function parseManifest(opfObj): Item[] {
 }
 
 export function parseSpine(opfObj): any {
-  return getArray(opfObj.package.spine.itemref).map(itemref => itemref.attr.idref)
+  return getArray(opfObj.package.spine.itemref).map(itemref => itemref.attr)
 }
 
 export function parseOpf(xml) {
@@ -108,5 +108,6 @@ export function parseOpf(xml) {
     metadata: parseMetadata(opfObj),
     manifest: parseManifest(opfObj),
     spine: parseSpine(opfObj),
+    ncxId: opfObj.package.spine.attr && opfObj.package.spine.attr.toc
   }
 }

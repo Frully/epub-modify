@@ -84,15 +84,18 @@ describe('parseOpf.ts', () => {
 
   describe('parseSpine()', () => {
     test('Result should have data', async () => {
-      const opfObj = await readToXmlObj('opf1.opf')
+      const opfObj = await readToXmlObj('opf5.opf')
       const spine = parseSpine(opfObj)
 
-      expect(spine.length).toBe(3)
-      expect(spine).toMatchObject([
-        'cover.xhtml',
-        'section0001.xhtml',
-        'section0002.xhtml',
-      ])
+      expect(spine.length).toBe(74)
+      expect(spine[0]).toMatchObject({
+        idref: 'html_3',
+        linear: 'yes',
+      })
+      expect(spine[73]).toMatchObject({
+        idref: 'html_73',
+        linear: 'yes',
+      })
     })
   })
 

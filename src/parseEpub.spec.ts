@@ -13,6 +13,10 @@ describe(`parser`, () => {
     expect(epub).toHaveProperty('metadata')
     expect(epub).toHaveProperty('manifest')
     expect(epub).toHaveProperty('spine')
+    expect(epub.spine[0].item).toMatchObject({
+      id: 'cover.xhtml',
+      href: 'xhtml/cover.xhtml',
+    })
     expect(epub.nav.toc).toHaveLength(2)
   })
 

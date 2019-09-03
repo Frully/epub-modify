@@ -1,20 +1,20 @@
 import { Epub } from './parseEpub'
 
-type FileData = {
+type ItemData = {
   id: string
   href: string
   'media-type': string
   properties?: string
 }
 
-export class File {
+export class Item {
   epub: Epub
   id: string
   href: string
   'media-type': string
   properties?: string
 
-  constructor(data: FileData, epub: Epub) {
+  constructor(data: ItemData, epub: Epub) {
     this.epub = epub
     this.id = data.id
     this.href = data.href
