@@ -23,6 +23,7 @@ export class Epub {
   metadata: {
     title: string
     creators: any[]
+    publisher: string
     description: string
     language: string[]
     isbn: string
@@ -75,9 +76,9 @@ export class Epub {
   private async getOpfPath() {
     const containerObj = xml2obj(await this.getFileText('/META-INF/container.xml'))
     let opfPath = containerObj.container.rootfiles.rootfile.attr['full-path']
-    
+
     const file = await this.zip.file(opfPath)
-    
+
     if (!file) {
       const opfFiles = this.zip.filter((_, opfFile) => {
         return !opfFile.dir && opfFile.name.match(/content\.opf$/)
@@ -156,9 +157,10 @@ export class Epub {
       }
     })
 
-    const versionNum = parseFloat(this.version)
-    if (versionNum >= 3) {
-      this.nav = parseNav(await this.findItem({ properties: 'nav'}).getText())
+    const navFile = this.findItem({ properties: 'nav' })
+
+    if (navFile) {
+      this.nav = parseNav(await navFile.getText())
     } else {
       let ncxFile
       if (opf.ncxId) {
@@ -167,8 +169,11 @@ export class Epub {
       if (!ncxFile) {
         ncxFile = this.findItem({ 'media-type': 'application/x-dtbncx+xml' })
       }
-      const ncxXml = await ncxFile.getText()
-      this.nav = { toc: parseNcx(ncxXml) }
+      this.nav = {}
+      if (ncxFile) {
+        const ncxXml = await ncxFile.getText()
+        this.nav.toc = parseNcx(ncxXml)
+      }
     }
   }
 

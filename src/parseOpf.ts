@@ -11,6 +11,14 @@ function getArray(val) {
   }
 }
 
+function getOne(val) {
+  if (Array.isArray(val)) {
+    return val[0]
+  } else {
+    return val
+  }
+}
+
 function parseIdentifier(metadataObj) {
   const identifiers = getArray(metadataObj['identifier'])
 
@@ -32,8 +40,8 @@ function parseIdentifier(metadataObj) {
     } else if (type && type.match(/^(mobi-)?asin/i)) {
       asin = id
 
-    } else if (id.match(/^(URN:ISBN|ISBN):?(.+)/i)) {
-      isbn = id.match(/^(?:URN:ISBN:|ISBN):?(.+)/i)[1]
+    } else if (id.match(/^(?:URN:ISBN|ISBN):?(.+)/i)) {
+      isbn = id.match(/^(?:URN:ISBN|ISBN):?(.+)/i)[1]
 
     } else if (id.match(/^URN:ASIN:/i)) {
       asin = id.match(/^URN:ASIN:(.+)/i)[1]
@@ -66,6 +74,8 @@ export function parseMetadata(opfObj) {
     }
   })
 
+  let publisher = getOne(metadataObj.publisher)
+
   let { isbn, asin } = parseIdentifier(metadataObj)
 
   const description = metadataObj.description && htmlToText.fromString(metadataObj.description, {
@@ -78,6 +88,7 @@ export function parseMetadata(opfObj) {
   return {
     title,
     creators,
+    publisher,
     description,
     language,
     isbn,

@@ -41,6 +41,7 @@ describe('parseOpf.ts', () => {
         ],
         language: ['pt'],
         asin: 'B07RLVVZS1',
+        publisher: 'Bertrand',
       })
     })
 
