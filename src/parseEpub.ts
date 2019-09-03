@@ -17,6 +17,7 @@ export class Epub {
   private opfPath: string
   version: string
   manifest: Item[]
+  itemIndex: any
   spine: any[]
   nav: any
   metadata: {
@@ -100,7 +101,24 @@ export class Epub {
     this.setZipFile(this.opfPath, xml)
   }
 
+  private createItemIndex() {
+    this.itemIndex = {}
+
+    this.manifest.forEach(item => this.itemIndex[item.id] = item)
+  }
+
+  private findItemById(id) {
+    return this.itemIndex[id]
+  }
+
   private findItem(query) {
+    let items
+    if (query.id) {
+      items = [this.findItemById(query.id)]
+    } else {
+      items = this.manifest
+    }
+
     const keys = Object.keys(query)
 
     const findFn = file => {
@@ -111,7 +129,7 @@ export class Epub {
       return true
     }
 
-    return this.manifest.find(findFn)
+    return items.find(findFn)
   }
 
   async parse() {
@@ -129,10 +147,12 @@ export class Epub {
       return new Item(item, this)
     })
 
+    this.createItemIndex()
+
     this.spine = opf.spine.map(itemref => {
       return {
         ...itemref,
-        item: this.findItem({ id: itemref.idref }),
+        item: this.findItemById(itemref.idref),
       }
     })
 
@@ -142,7 +162,7 @@ export class Epub {
     } else {
       let ncxFile
       if (opf.ncxId) {
-        ncxFile = this.findItem({ id: opf.ncxId })
+        ncxFile = this.findItemById(opf.ncxId)
       }
       if (!ncxFile) {
         ncxFile = this.findItem({ 'media-type': 'application/x-dtbncx+xml' })
