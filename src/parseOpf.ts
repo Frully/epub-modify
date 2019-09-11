@@ -19,6 +19,11 @@ function getOne(val) {
   }
 }
 
+function getText(val) {
+  if (!val) return val
+  return val['#text'] || val
+}
+
 function parseIdentifier(metadataObj) {
   const identifiers = getArray(metadataObj['identifier'])
 
@@ -65,7 +70,7 @@ function parseIdentifier(metadataObj) {
 
 export function parseMetadata(opfObj) {
   const metadataObj = opfObj.package.metadata
-  let title = metadataObj.title
+  let title = getText(metadataObj.title)
 
   let creators = getArray(metadataObj.creator).map(creator => {
     return {
