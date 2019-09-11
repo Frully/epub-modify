@@ -45,7 +45,7 @@ export class Epub {
       newPath = pathUtil.join(this.root, path)
     }
 
-    return decodeURI(newPath)
+    return decodeURIComponent(newPath)
   }
 
   private getZipFile(path: string): JSZipObject {
