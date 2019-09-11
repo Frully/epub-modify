@@ -1,3 +1,4 @@
+import * as pathUtil from 'path'
 import fs from 'mz/fs'
 import Zip, { JSZipObject } from 'jszip'
 import { parseOpf } from './parseOpf'
@@ -41,7 +42,7 @@ export class Epub {
       // use absolute path, root is zip root
       newPath = path.substr(1)
     } else {
-      newPath = this.root + path
+      newPath = pathUtil.join(this.root, path)
     }
 
     return decodeURI(newPath)
