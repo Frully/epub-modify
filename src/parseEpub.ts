@@ -5,6 +5,7 @@ import { parseOpf } from './parseOpf'
 import { parseNav, parseNcx } from './parseNav'
 import { Item } from './item'
 import { xml2obj } from './utils'
+import * as entities from 'entities'
 
 
 function getRoot(opfPath) {
@@ -45,7 +46,7 @@ export class Epub {
       newPath = pathUtil.join(this.root, path)
     }
 
-    return decodeURIComponent(newPath)
+    return entities.decode(decodeURIComponent(newPath))
   }
 
   private getZipFile(path: string): JSZipObject {

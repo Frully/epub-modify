@@ -52,4 +52,10 @@ describe(`parser`, () => {
     const buffer = await epub.toBuffer()
     expect(buffer instanceof Buffer).toBeTruthy()
   })
+
+  test('Should get buffer', async() => {
+    const epub = await parseEpub(path.join(baseDir, 'fixtures/epub3.epub'))
+
+    await epub.manifest[1].getText()
+  })
 })

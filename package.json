@@ -1,6 +1,6 @@
 {
   "name": "epub-modify",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Easy to read and edit .epub files.",
   "main": "lib/index.js",
   "scripts": {
@@ -32,7 +32,9 @@
   },
   "homepage": "https://github.com/Frully/epub-modify#readme",
   "dependencies": {
+    "@types/entities": "^1.1.1",
     "cheerio": "^1.0.0-rc.3",
+    "entities": "^2.0.0",
     "fast-xml-parser": "^3.12.20",
     "html-to-text": "^5.1.1",
     "jszip": "^3.2.2",
