@@ -13,6 +13,7 @@ export class Item {
   href: string
   'media-type': string
   properties?: string
+  isExists: boolean
 
   constructor(data: ItemData, epub: Epub) {
     this.epub = epub
@@ -20,6 +21,7 @@ export class Item {
     this.href = data.href
     this['media-type'] = data['media-type']
     this.properties = data.properties
+    this.isExists = this.epub.isFileExists(this.href)
   }
 
   async getText() {

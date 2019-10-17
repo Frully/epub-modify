@@ -61,6 +61,14 @@ export class Epub {
     }
   }
 
+  isFileExists(path: string): boolean {
+    let fullPath = this.handlePath(path)
+
+    const file = this.zip.file(fullPath)
+
+    return !!file
+  }
+
   private setZipFile(path: string, data: string | Buffer) {
     let fullPath = this.handlePath(path)
     this.zip.file(fullPath, data)
